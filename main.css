@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .hover{
+        @apply hover:bg-[#edede9] py-3 px-3 rounded-lg;
+    }
+}

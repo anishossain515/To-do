@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Note</title>
+    <link rel="shortcut icon" href="img/todologo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bg-[#f6f6f9] overflow-x-hidden">
+
+    <!--sidebar-->
+
+    <div class="container w-[100vw] h-[100vh] grid grid-cols-12">
+        <!--side bar start-->
+        <aside class="p-2 h-[100vh] w-[250px] bg-white relative md:col-span-2 col-span-1"  id="sidebar">
+      <!--top start-->
+           <div class="flex items-center gap-24">
+
+            <div class="flex items-center gap-1">
+                <img src="img/todologo.png" class="w-[40px]">
+                <h2 class="text-xl font-DM font-medium text-gray-800">To-do</h2>
+            </div>
+            <i class='bx bx-left-arrow-alt text-3xl cursor-pointer' ></i>
+           </div>
+
+           <!--top end-->
+
+         <div class="saidItems pt-8 pl-3">
+
+            <!--dashboard-->
+
+            <a href="" class="flex items-center gap-2 text-[#363949] hover">
+                <i class='bx bxs-dashboard text-2xl'></i>
+                <h2 class="font-Poppins font-medium text-xl">Dashboard</h2>
+            </a>
+
+               <!--sing in-->
+               <a href="" class="flex items-center gap-2 text-[#363949] absolute bottom-8 hover">
+                <i class='bx bx-log-in text-2xl' ></i>
+                <h2 class="font-Poppins  font-medium text-xl">Sing In</h2>
+               </a>
+
+         </div>
+ 
+      </aside>
+
+      
+    <main class="md:col-span-10 col-span-11">
+
+       <div class="md:pl-16 pt-5">
+          <h2 class="text-2xl pb-3 ">Note Your Day</h2>
+        <hr class="text-gray-400 border-t-3">
+       </div>
+
+       <div class="md:pl-64 md:pt-20 flex flex-col gap-3">
+
+      <div class="flex items-center gap-2 md:pb-1 pb-3 md:pt-0 pt-4"> 
+          <h2 class="md:text-4xl text-3xl">This is Your Day</h2>
+          <img src="img/todoimg.webp" class="w-[50px] rounded-2xl">
+        </div>
+
+        <div class="flex items-center gap-2">
+            <input type="text" name="" id="inputBox" placeholder="Add your task" class="outline-none w-full py-2.5 p-5 rounded-full  hover:shadow-lg">
+            <button id="addBtn"  class="bg-[#669bbc] px-4 py-2 text-white text-xl rounded-2xl hover:transition-all  hover:scale-105">Add</button>
+        </div>
+
+        <h2 class="text-2xl pt-16 pb-2 pl-5" >My Task :</h2>
+
+        <div class="pace-y-2  "  id="listContainer">  
+              
+
+          </div>
+
+
+       </div>
+ 
+
+     
+
+
+     </main>
+       
+    </div>
+        
+ 
+ <script src="todo.js" type="module"></script>
+</body>
+</html>
