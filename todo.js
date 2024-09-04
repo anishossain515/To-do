@@ -65,7 +65,7 @@ addValue.addEventListener('click', (e) => {
 
 
 const sideArrow = document.querySelector('#arrow')
-const menuBar = document.querySelector('#menu')
+
 
 sideArrow.addEventListener('click',()=>{
     const container = document.querySelector('#sidebar')
